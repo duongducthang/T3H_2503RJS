@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Menu Đơn Giản với Flexbox</title>
+        <style>
+            .menu {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                background-color: #554f4f;
+            }
+
+            .menu-item{
+                flex-grow: 1;
+                text-align: center;
+                padding: 15px 0;
+                text-decoration: none;
+                color:#333;  
+            }
+
+            .menu-item:hover{
+                background-color: #ddd;                     
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="#" class = "menu-item">Home</a>
+            <a href="#" class = "menu-item">About</a>
+            <a href="#" class = "menu-item">Services</a>
+            <a href="#" class = "menu-item">Contact</a>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav, .second-nav, .third-nav, .bottom-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.top-nav button, .second-nav button, .third-nav button, .bottom-nav button {
+    background-color: #b0e57c;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.top-nav button:hover, .second-nav button:hover, .third-nav button:hover, .bottom-nav button:hover {
+    background-color: #8cc663;
+}
+
+.top-nav .logo, .second-nav .logo, .third-nav .logo {
+    background-color: #8cc663;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.second-nav span, .third-nav span, .bottom-nav span {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.second-nav nav, .third-nav nav {
+    display: flex;
+}
+
+.layout {
+    display: flex;
+    height: 300px;
+}
+
+.left-sidebar {
+    flex: 1;
+    background-color: #f8c6c6;
+    padding: 10px;
+}
+
+.content {
+    flex: 3;
+    background-color: #d9f2d9;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <button class="logo">Logo</button>
+        <button>About</button>
+        <button>Home</button>
+        <button>Contact</button>
+    </div>
+
+    <!-- Second Navigation -->
+    <div class="second-nav">
+        <button class="logo">Logo</button>
+        <span>Brand name</span>
+        <nav>
+            <button>Home</button>
+            <button>About</button>
+            <button>Contact</button>
+            <button>Login</button>
+        </nav>
+    </div>
+
+    <!-- Third Navigation -->
+    <div class="third-nav">
+        <button class="logo">Logo</button>
+        <span>Brand name</span>
+        <nav>
+            <button>Home</button>
+            <span>Your name</span>
+        </nav>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <button>Home</button>
+        <button>Friends</button>
+        <button>Market</button>
+        <span>Your name</span>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="layout">
+        <div class="left-sidebar">Left sidebar</div>
+        <div class="content">Content</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Footer</div>
+</body>
+</html>
